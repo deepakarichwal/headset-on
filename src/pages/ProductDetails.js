@@ -85,7 +85,7 @@ function ProductDetails() {
     <StyledProduct>
       {product.best_seller && <BestSeller>Best Seller</BestSeller>}
       <Img
-        src={`${process.env.REACT_APP_HOST}/${product.image}`}
+        src={product.image}
         alt={product.name}
       />
 
