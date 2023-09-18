@@ -4,8 +4,6 @@ import ProductCard from "../../ui/ProductCard";
 import { useEffect } from "react";
 import { getFeatured } from "./homeSlice";
 import StyledSpinner from "../../ui/Spinner";
-import { loadProducts } from "../products/productSlice";
-import { loadCart } from "../cart/cartSlice";
 
 const StyledFeatured = styled.div``;
 
@@ -25,10 +23,6 @@ const Container = styled.div`
   @media screen and (max-width: 970px) {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* @media screen and (max-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
-  } */
 `;
 
 function FeaturedProducts() {
@@ -39,7 +33,6 @@ function FeaturedProducts() {
   useEffect(
     function () {
       dispatch(getFeatured());
-      // dispatch(loadCart());
     },
     [dispatch]
   );

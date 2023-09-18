@@ -13,12 +13,4 @@ function Form({ options, handleForm }) {
   );
 }
 
-/* <Form
-        options={[
-          { labelName: "User name", type: "text" },
-          { labelName: "Email", type: "text" },
-          { labelName: "Price - Low to high", type: "radio" },
-        ]}
-      /> */
-
 export default Form;

@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -26,20 +25,6 @@ const LoggedOutLink = styled(Link)`
 `;
 
 function DropDownLoggedOut({ isOpen, close }) {
-  // const ref = useRef();
-
-  // useEffect(
-  //   function () {
-  //     function handleClick(e) {
-  //       if (ref.current && !ref.current.contains(e.target)) close();
-  //     }
-
-  //     document.addEventListener("click", handleClick, true);
-
-  //     return () => document.removeEventListener("click", handleClick, true);
-  //   },
-  //   [close, isOpen]
-  // );
   return (
     <StyledLoggedOut>
       <LoggedOutLink to="/products" onClick={() => close()}>

@@ -6,16 +6,13 @@ import { HiOutlineTrash } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
 const StyledCartCard = styled.div`
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+  
 
   width: 100%;
   display: grid;
   grid-template-columns: 180px 2fr 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  /* border-radius: 10px; */
   border-bottom: 1px solid var(--color-grey-300);
   overflow: hidden;
   padding: 10px;

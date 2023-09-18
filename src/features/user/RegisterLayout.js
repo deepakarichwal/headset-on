@@ -15,25 +15,6 @@ const Heading = styled.h3`
   position: relative;
   width: fit-content;
   margin: 0 auto 2rem;
-
-  /* &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 4px;
-    background-color: var(--color-brand-500);
-    top: 18px;
-    border-radius: 10px;
-  }
-
-  &::after {
-    right: -60px;
-  }
-
-  &::before {
-    left: -60px;
-  } */
 `;
 
 const Form = styled.form`

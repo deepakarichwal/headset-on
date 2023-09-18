@@ -69,7 +69,6 @@ function ProductDetails() {
   useEffect(
     function () {
       dispatch(getProduct(params.id));
-      // dispatch(loadCart());
     },
     [dispatch, params.id]
   );
@@ -93,7 +92,6 @@ function ProductDetails() {
         src={`${process.env.REACT_APP_HOST}/${product.image}`}
         alt={product.name}
       />
-      {/* <Img src={product.image} alt={product.name} /> */}
 
       <InnerInfo>
         <h3>{product.name}</h3>
@@ -111,8 +109,6 @@ function ProductDetails() {
           ) : (
             <Button onClick={handleAdd}>Add to cart</Button>
           )}
-
-          {/* <Button variation="warning">Buy now</Button> */}
         </div>
       </InnerInfo>
     </StyledProduct>

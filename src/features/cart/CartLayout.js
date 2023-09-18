@@ -1,8 +1,7 @@
 import { styled } from "styled-components";
 import CartCard from "./CartCard";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
-import { loadCart } from "./cartSlice";
+import { useState } from "react";
 import StyledSpinner from "../../ui/Spinner";
 import Button from "../../ui/Button";
 
@@ -43,13 +42,6 @@ function CartLayout() {
   const { cartItems, isLoading } = useSelector((store) => store.cart);
 
   const dispatch = useDispatch();
-
-  useEffect(
-    function () {
-      // dispatch(loadCart());
-    },
-    [dispatch]
-  );
 
   const totalPrice = cartItems.reduce((cur, acc) => cur + acc.price, 0);
 

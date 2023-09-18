@@ -7,7 +7,6 @@ import StarRating from "./StarRating";
 import { HiOutlineTrash } from "react-icons/hi2";
 
 const StyledCard = styled.div`
-  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); */
   max-width: 350px;
   border-radius: 10px;
   overflow: hidden;
@@ -16,8 +15,6 @@ const StyledCard = styled.div`
 
   &.in-stock {
     filter: grayscale(1);
-    /* opacity: 0.5; */
-    /* cursor: not-allowed; */
     pointer-events: none;
   }
 `;

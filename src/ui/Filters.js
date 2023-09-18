@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { HiEllipsisVertical, HiOutlineXMark } from "react-icons/hi2";
 import { useSelector } from "react-redux";
 import { useNavigate, useSearchParams } from "react-router-dom";
@@ -106,7 +106,7 @@ const Label = styled.label`
 
 function Filters() {
   const [showFilter, setShowFilter] = useState(false);
-  const [clearFilters, setClearFilters] = useState(null);
+
   const [searchParams, setSearchParams] = useSearchParams();
   const { productList } = useSelector((store) => store.products);
 
@@ -139,13 +139,6 @@ function Filters() {
     searchParams.set("bestSeller", e.target.checked);
     setSearchParams(searchParams);
   }
-
-  // Clear Filters
-  // function handleClear() {
-  //   searchParams.delete("sortBy");
-  //   searchParams.delete("starRating");
-  //   setSearchParams(searchParams);
-  // }
 
   return (
     <Filter>
@@ -259,7 +252,6 @@ function Filters() {
             </OptionsInput>
           </Form>
         </FilterCat>
-        {/* <Button onClick={handleClear}>Clear All</Button> */}
       </FilterOptions>
     </Filter>
   );

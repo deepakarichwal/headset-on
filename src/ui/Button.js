@@ -65,7 +65,6 @@ const Button = styled.button`
   border: none;
   color: var(--color-grey-200);
   font-weight: 600;
-  /* text-transform: uppercase; */
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: ease-in 0.1s;

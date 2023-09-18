@@ -7,7 +7,6 @@ function HomePage() {
   useEffect(function () {
     document.title = "Headset ON";
   }, []);
-  // useTitle("Headset ON");
   return (
     <div>
       <Hero />

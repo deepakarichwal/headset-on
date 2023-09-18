@@ -109,7 +109,7 @@ function CheckOut({ totalPrice }) {
       },
     };
 
-    const res = await fetch("http://localhost:8000/660/order", {
+    const res = await fetch(`${process.env.REACT_APP_HOST}/660/order`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -122,7 +122,6 @@ function CheckOut({ totalPrice }) {
     console.log(data);
     if (data.id) {
       dispatch(clearCart());
-      // toast.success("");
       navigate("/order-summary", { state: { data } });
     }
   }

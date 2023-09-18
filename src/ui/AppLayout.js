@@ -7,7 +7,6 @@ import Footer from "../ui/Footer";
 const Main = styled.main`
   padding: 40px 20px;
   width: 100%;
-  /* min-height: calc(100%-300px); */
 `;
 
 const Container = styled.div`

@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-
 import GlobalStyles from "./styles/GlobalStyles";
 import HomePage from "./pages/HomePage";
 import Cart from "./pages/Cart";
@@ -31,8 +30,6 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route element={<AppLayout />}>
-            {/* <Route index element={<Navigate replace to="/" />} /> */}
-
             <Route index path="/" element={<HomePage />} />
 
             <Route path="products" element={<Products />} />

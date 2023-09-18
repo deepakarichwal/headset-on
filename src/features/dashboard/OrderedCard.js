@@ -20,7 +20,6 @@ const OrderedItems = styled.div`
   grid-template-columns: 180px 2fr 1fr;
   align-items: center;
   justify-content: space-between;
-  /* border-radius: 10px; */
   border-bottom: 1px solid var(--color-grey-300);
   padding: 10px 0;
 

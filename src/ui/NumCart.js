@@ -9,8 +9,6 @@ const StyledNumCart = styled(Link)`
 
 const Num = styled.span`
   position: absolute;
-  /* width: 15px;
-  height: 15px; */
   padding: 7px 5px;
   background-color: var(--color-brand-500);
   border-radius: 50%;

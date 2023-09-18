@@ -15,10 +15,6 @@ const Container = styled.div`
   @media screen and (max-width: 970px) {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* @media screen and (max-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
-  } */
 `;
 
 function Search() {
