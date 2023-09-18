@@ -5,11 +5,7 @@ import { getProduct } from "../features/products/productSlice";
 import StyledSpinner from "../ui/Spinner";
 import { styled } from "styled-components";
 import Button from "../ui/Button";
-import {
-  addToCart,
-  loadCart,
-  removeFromCart,
-} from "../features/cart/cartSlice";
+import { addToCart, removeFromCart } from "../features/cart/cartSlice";
 import StarRating from "../ui/StarRating";
 import useTitle from "../hooks/useTitle";
 

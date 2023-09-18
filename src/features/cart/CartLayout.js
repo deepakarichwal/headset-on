@@ -41,8 +41,6 @@ function CartLayout() {
   const [isOpen, close] = useState(false);
   const { cartItems, isLoading } = useSelector((store) => store.cart);
 
-  const dispatch = useDispatch();
-
   const totalPrice = cartItems.reduce((cur, acc) => cur + acc.price, 0);
 
   if (isLoading) return <StyledSpinner />;

@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { HiEllipsisVertical, HiOutlineXMark } from "react-icons/hi2";
 import { useSelector } from "react-redux";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import styled from "styled-components";
-import Button from "../ui/Button";
 
 const Filter = styled.div`
   display: flex;
