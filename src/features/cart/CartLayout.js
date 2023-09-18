@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import CartCard from "./CartCard";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useState } from "react";
 import StyledSpinner from "../../ui/Spinner";
 import Button from "../../ui/Button";
