@@ -1,13 +1,11 @@
 import { styled } from "styled-components";
-import Button from "../../ui/Button";
 import { useDispatch } from "react-redux";
 import { removeFromCart } from "./cartSlice";
 import { HiOutlineTrash } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import Button from "../../ui/Button";
 
 const StyledCartCard = styled.div`
-  
-
   width: 100%;
   display: grid;
   grid-template-columns: 180px 2fr 1fr 1fr;
